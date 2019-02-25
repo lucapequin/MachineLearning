@@ -1,0 +1,8 @@
+La combinación de modelos o ensemble es un modo de entrenamiento de un conjunto de diferentes modelos y con diferentes muestras para luego combinar las predicciones, esto hace 	que sea más estable y se reduzca la varianza. Existen diferentes tipos de ensemble, entre ellos los más importantes son: Bagging, Boosting y Stacking. 
+Existen diversas semejanzas y diferencias, algunas de ellas son:
+Entre Bagging y Boosting ambos casos entrenan N modelos con la diferencia de que en Bagging se construyen de manera independiente, En boosting cada modelo construido se hace a partir del anterior para mejorar los errores.
+En ambos casos se generan varios datasets para entrenar los modelos, pero Boosting genera peso para los casos que fueron más complicados de predecir.
+En ambos casos se toma la decisión por medio de un voto mayoritario, pero Boosting favorece su resultado de acuerdo al peso de la media de cada modelo.
+Ambos casos reducen la varianza y son más estables, Bagging tiene la capacidad de reducir el over-fit en cambio Boosting puede aumentarlo.
+Esta combinación de modelos es eficiente para Machine Learning porque diversifica las respuestas y elije según la cantidad de árboles que tengan una predicción similar, además, redice la varianza y crea estabilidad al usar para cada modelo construido una muestra de datos de entrenamiento diferente, 
+Este método es una de las técnicas más porpulares en el Machine Learning por su capacidad de predecir y clasificar de forma muy acertada y con mayor precisión que otras técnicas en las que no se usa el ensamble de modelos.
